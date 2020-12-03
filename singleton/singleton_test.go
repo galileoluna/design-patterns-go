@@ -18,7 +18,7 @@ func TestGetInstancia(t *testing.T) {
 	contador2 := GetInstancia()
 	if contador2 != contadorEsperado {
 		//Test 2 falla
-		t.Error("Singleton Instancias must be different")
+		t.Error("Las intancias deben ser diferentes")
 	}
 
 	contadorActual = contador2.AgregarUno()
