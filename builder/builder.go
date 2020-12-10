@@ -8,15 +8,15 @@ type BuildProcess interface {
 }
 
 //Director
-type ManufacturingDirector struct {
+type Director struct {
 	builder BuildProcess
 }
 
-func (f *ManufacturingDirector) Construct() {
+func (f *Director) Construct() {
 	f.builder.SetAsientos().SetEstructura().SetRuedas()
 }
 
-func (f *ManufacturingDirector) SetBuilder(b BuildProcess) {
+func (f *Director) SetBuilder(b BuildProcess) {
 	f.builder = b
 }
 

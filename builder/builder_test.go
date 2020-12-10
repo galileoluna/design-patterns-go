@@ -5,7 +5,7 @@ import (
 )
 
 func TestBuilderPattern(t *testing.T) {
-	manufacturingComplex := ManufacturingDirector{}
+	manufacturingComplex := Director{}
 
 	autoBuilder := &AutoBuilder{}
 	manufacturingComplex.SetBuilder(autoBuilder)
